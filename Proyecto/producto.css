@@ -52,7 +52,7 @@ html {
     grid-row: 1 / 3;
     width: 200px;
     height: 200px;
-    background-image: url(../Assets/top2.png);
+    background-image: url(http://drive.google.com/uc?export=view&id=1TnPyPFY9FFebcrO1wayWfccZH3rI1erx);
     background-size: var(--back-size);
     background-position: var(--back-pos);
     background-repeat: var(--back-rep);
@@ -92,7 +92,7 @@ html {
     grid-row: 3 / 5;
     width: 200px;
     height: 200px;
-    background-image: url(../Assets/top1.png);
+    background-image: url(http://drive.google.com/uc?export=view&id=10NHOZPbKeJCtlv34M_77tVkKLAyWZwYs);
     background-size: var(--back-size);
     background-position: var(--back-pos);
     background-repeat: var(--back-rep);
@@ -132,7 +132,7 @@ html {
     grid-row: 5 / 7;
     width: 200px;
     height: 200px;
-    background-image: url(../Assets/top3.png);
+    background-image: url(http://drive.google.com/uc?export=view&id=17ZMrXUVBwsN2nFjx9SxvU_QqvXGhH1Yk);
     background-size: var(--back-size);
     background-position: var(--back-pos);
     background-repeat: var(--back-rep);
