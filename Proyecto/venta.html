@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Imagen en pestaña-->
+    <link rel="image icon" href="http://drive.google.com/uc?export=view&id=1OKOErkwDSuzPJo3KJKEDf9AVaYTR4ZaR" />
+    <!--Imagen en pestaña-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./venta.css">
+    <link rel="stylesheet" href="../css/laptop.css" media="(max-width: 830px)">
+    <link rel="stylesheet" href="../css/ventas-responsive.css" media="(min-width: 930px)">
+    <!--Animacion-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!--Animacion-->
+
+    <title>Venta</title>
+</head>
+<body>
+    <nav class="nav-container fedeInDown">
+        <div class="logo-img">
+            <a href="./index.html"><img src="../Assets/logo.png" alt="logo"></a>
+        </div>
+
+        <!-- Boton Flotante -->
+        <div class="menu">
+            <div class="container2">
+                <input type="checkbox" id="toggle">
+                    <a href="./faqs.html">Faqs</a>
+                    <a href="./producto.html">Productos y descripcion</a>
+                    <a href="./yo.html">Sobre mi</a>
+                </div>
+                <div class="toggle">
+                            <label for="toggle" class="fa fa-plus"></label>
+                </div>
+            </div>
+        </div>
+        <!-- Boton Flotante -->
+    </nav>
+    <main>
+        <section class="sale-container">
+            <article class="sale-product-container-box animate__animated animate__backInDown">
+                <div class="sale-product-info-container">
+                    <img class="sale-image-product" src="../Assets/product.png" alt="image-box1">
+                    <h2>Producto</h2>
+                    <p><ins>Miles de productos</ins> hay en el mercado, pero nada como una buena merch de <mark>Juice WRLD</mark></p>   
+                </div>
+            </article>
+            <article class="form-container animate__animated animate__backInUp">
+                <form action="#">
+                    <ul>
+                        <label for="nombre" class="name-input">
+                            <span>Nombre</span>
+                            <input type="text" id="nombre" required>
+                        </label>
+                    </ul>
+                    <ul>
+                        <label for="email" class="email-input" >
+                            <span>Mail</span>
+                            <input type="email" id="email" required>
+                        </label>
+                    </ul>
+                    <ul>
+                        <label for="telefono" class="phone-input">
+                            <span>Telefono</span>
+                            <input type="tel" id="telefono" required>
+                        </label>
+                    </ul>
+                    <ul>
+                        <label for="contraseña" class="password-input">
+                            <span>Contraseña</span>
+                            <input type="password" id="pwd" data-toggle="popover" data-trigger="hover" data-placement="right" title="Contraseña"  data-content="La Contrasena debe contener min. 8 caracteres, una mayuscula y un numero" required>
+                        </label>
+                    </ul>
+                    <!-- Boton de Pago -->
+                    <section class="Boton-de-pago">
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="KN8NEEUVHM8E8">
+                            <table>
+                            <tr><td><input type="hidden" name="on0" value="Tamaños">Tamaños</td></tr><tr><td><select name="os0">
+                                <option value="CH">CH $199.00 MXN</option>
+                                <option value="M">M $299.00 MXN</option>
+                                <option value="G">G $399.00 MXN</option>
+                            </select> </td></tr>
+                            </table>
+                            <input type="hidden" name="currency_code" value="MXN">
+                            <input type="image" src="https://www.paypalobjects.com/es_XC/MX/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                    </section>
+
+                    <!-- reCAPTCHA -->
+                    <!-- <form action="?" method="POST">
+                        <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                        <br/>
+                        <input type="submit" value="Submit">
+                    </form> -->
+                    <!-- reCAPTCHA -->
+
+                    <!-- Boton de Pago -->
+                </form>
+            </article>
+        </section>
+        <footer>
+            <section class="social-container">
+                <ul>
+                    <li><a href="#">Likedin</a></li>
+                    <li><a href="#">GitHub</a></li>
+                </ul>
+            </section>
+            <div class="logo-img">
+                <img src="../Assets/logo.png" alt="logo">
+            </div>
+        </footer>
+    </main>
+    <script src="https://kit.fontawesome.com/4a5bfa52c4.js" crossorigin="anonymous"></script>
+
+    <!-- reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- reCAPTCHA -->
+
+    <!-- Para el Popover -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="popover"]').popover();
+      });
+    </script>
+    <!-- Para el Popover -->
+</body>
+</html>

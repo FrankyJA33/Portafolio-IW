@@ -1,0 +1,16 @@
+.faqs-main-container {
+    height: auto;
+}
+
+.faqs-main-container h1 {
+    position: absolute;
+    top: 15%;
+    font-size: 4rem;
+    background: #F7F7F7;
+    text-align: center;
+} 
+
+.faqs-main-container .faqs-main-list {
+    margin-top: 60%;
+    color: black;
+}

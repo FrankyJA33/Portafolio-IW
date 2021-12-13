@@ -1,0 +1,16 @@
+.sale-container {
+    padding: 0 15vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80.5vh;
+}
+
+.sale-product-container-box {
+    margin: 15px;
+    max-height: 230px;
+}
+
+.form-container {
+    margin: 15px;
+}

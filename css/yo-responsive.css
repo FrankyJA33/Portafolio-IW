@@ -1,0 +1,28 @@
+.main--tittle-container {
+    position: absolute;
+    color: black;
+    top: calc(40% - 45px);
+	left: calc(30% - 70px);
+}
+
+.main--tittle-container h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    left: calc(10% - 10px);
+    margin-top: 0 auto;
+}
+
+.main--tittle-container h3 {
+    text-align: center;
+    width: 27rem;
+    font-size: 1.6rem;
+    flex-wrap: wrap;
+    font-weight: 200;
+    margin: 0 auto;
+    padding-top: 2.5rem;
+}
+
+.social-container {
+    top: calc(60% - 45px);
+	left: calc(45% - 55px);
+}

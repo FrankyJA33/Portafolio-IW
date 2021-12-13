@@ -1,0 +1,66 @@
+/*
+Para crear animaciones con css hacemos lo siguiente:
+
+Creamos una funcion como cualquier otra normal de css, y adentro de ella iran las propiedades de la animacion:
+*/
+.fedeIn {
+    -webkit-animation-duration: 4s; /*Duracion de la animacion*/
+    -webkit-animation-fill-mode: both; /*Se definiran los keyframes tanto de ida como de regreso*/
+    -webkit-animation-name: fedeIn; /*Nombre de la animacion*/
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    animation-name: fedeIn;
+}
+/*Los keyframes van de la mano con la animacion, sin ella no se podria hacer:
+
+Adentro de ella se definira que es lo que hara la animacion:
+*/
+@keyframes fedeIn {
+    from{
+        opacity: 0;
+    } to{
+        opacity: 1;
+    }
+}
+
+.fedeInDown {
+    -webkit-animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    -webkit-animation-name: fedeInDown; 
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fedeInDown;
+}
+
+@keyframes fedeInDown {
+    from{
+        opacity: 0;
+        -webkit-transform: translate3d(0,-100%,0);
+        transform: translate3d(0,-100%,0);
+    }to{
+        opacity: 1;
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+}
+
+.fedeInUp {
+    -webkit-animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    -webkit-animation-name: fedeInUp; 
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fedeInUp;
+}
+
+@keyframes fedeInUp {
+    from{
+        opacity: 0;
+        -webkit-transform: translate3d(0,100%,0);
+        transform: translate3d(0,100%,0);
+    }to{
+        opacity: 1;
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+}

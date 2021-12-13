@@ -1,0 +1,9 @@
+.main-products--background span{
+    top: 55%;
+    min-height: 44vh;
+    max-height: 55vh;
+}
+
+.main-products-top-container {
+    margin-top: calc(30vh - 20px);
+}

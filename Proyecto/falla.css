@@ -1,0 +1,6 @@
+body {
+    background-image: url(../Assets/noSignal.gif);
+    background-size: var(--back-size);
+    background-position: var(--back-pos);
+    background-repeat: var(--back-rep);
+}
