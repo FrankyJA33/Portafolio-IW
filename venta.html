@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="./venta.css">
     <link rel="stylesheet" href="../css/laptop.css" media="(max-width: 830px)">
     <link rel="stylesheet" href="../css/ventas-responsive.css" media="(min-width: 930px)">
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <!--Animacion-->
     <link
     rel="stylesheet"
@@ -86,6 +89,7 @@
                             <input type="password" id="pwd" data-toggle="popover" data-trigger="hover" data-placement="right" title="Contraseña"  data-content="La Contrasena debe contener min. 8 caracteres, una mayuscula y un numero" required>
                         </label>
                     </ul>
+                    <button type="submit" class="bd-button" id="ebd" onclick="send()">Enviar datos</button>
                     <!-- Boton de Pago -->
                     <section class="Boton-de-pago">
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -144,6 +148,20 @@
       $(document).ready(function () {
         $('[data-toggle="popover"]').popover();
       });
+
+      const send = () => {
+        const name = document.getElementById("nombre").value;
+        const email = document.getElementById("email").value;
+        const tel = document.getElementById("telefono").value;
+
+        axios.post("http://localhost:8080/venta", {
+            nombre: name,
+            mail: email,
+            tel: tel
+        });
+        alert("Datos Enviados");
+      }
+      
     </script>
     <!-- Para el Popover -->
 </body>
