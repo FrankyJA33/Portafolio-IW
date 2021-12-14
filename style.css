@@ -9,6 +9,7 @@ html {
     font-family: 'Cabin', sans-serif;
     width: 100%;
     height: 100vh;
+    background: #f7f7f7;
 }
 
 :root {
@@ -33,7 +34,7 @@ html {
     color: var(--white);
     justify-content: space-between;
     align-items: center;
-    height: 5rem;
+    min-height: 5rem;
     width: var(--full-width);
 }
 
@@ -349,7 +350,7 @@ footer {
 /* Barras de Progreso */
 
 /* Bootstrap alert */
-.alert-warning {
+.alert {
     text-align: center;
 }
 /* Bootstrap alert */

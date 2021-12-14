@@ -50,11 +50,11 @@
 .menu a{
     text-align: center;
     display: block;
-    margin: 10px auto;
+    margin: 7px auto;
     color: #F7931A;
     text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     transition: all 500ms ease;
 }
 
@@ -93,3 +93,4 @@ button, input, optgroup, select, textarea {
     visibility: visible;
 }
 /* Para ocultar + y  el checkbox en el nav */
+

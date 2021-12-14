@@ -39,7 +39,7 @@
             <input type="checkbox" id="toggle">
             <div class="menu">
                 <a href="./faqs.html">Faqs</a>
-                <a href="./producto.html">Productos y descripcion</a>
+                <a href="./producto.html">Productos</a>
                 <a href="./yo.html">Sobre mi</a>
             </div>
             <div class="toggle">
@@ -67,9 +67,24 @@
                 <article class="product-container-box">
                     <div class="product-info-container">
                         <img class="image-product" src="http://drive.google.com/uc?export=view&id=1cfOwkVTFu4BS91sPGWUZ4Xp0-XDxjx5Q" alt="image-box1">
-                        <h2>Producto 1</h2>
+                        <h2>Merchhh</h2>
                         <p>Miles de productos hay en el mercado, pero nada como una buena merch de Juice WRLD</p>
-                        <a href="./venta.html"><button class="product-button animate__animated animate__swing">Lo quiero</button></a>    
+                        <a href="#product-us" class="header--buttom" onclick="reproducir()"><button class="product-button animate__animated animate__swing">Ver mas</button><span></span></a>
+                        <!--Sonido en botones--> 
+                        <audio id="btn-audio" src="http://drive.google.com/uc?export=view&id=1JZU6xIb36f7NgxcGce3IqICtrnd_4fn0"> </audio>
+                            <!--Script necesario para usar sonido en botones-->
+                            <script>
+                                let sound = true;
+                                let MiAudio = document.getElementById("btn-audio");
+
+                                function reproducir(){
+                                    if(sound){
+                                        MiAudio.play();
+                                    }
+                                }
+                            </script>
+                            <!--Script necesario para usar sonido en botones-->
+                        <!--Sonido en botones--> 
                     </div>
                 </article>
                 <article class="product-container-box">
@@ -85,14 +100,14 @@
         </section>
 
         <!-- Bootstrap Alert -->
-        <div class="alert alert-warning" role="alert">
+          <div class="alert alert-info" role="alert">
             <h5>Estos productos solamente estan disponibles en Mexico y EE. UU. </h5>
-        </div>
+          </div>
         <!-- Bootstrap Alert -->
 
         <section class="main-products-top-container">
             <div class="main-products-top--title">
-                <h2>Nuestros productos</h2>
+                <h2 id="product-us">Nuestros productos</h2>
             </div>
             <section class="product-top-container">
                 <article class="product-top-card">
@@ -190,9 +205,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
     <!-- Sonido en Botones -->
-    <script type="text/javascript">
-        var sonido = new audio();
-        sonido.src = Audio-de-boton.wav;
+    <script>
+        let sound = true;
+        let MiAudio = document.getElementById("btn-audio");
+
+        function reproducir(){
+            if(sound){
+                MiAudio.play();
+            }
+        }
     </script>
     <!-- Sonido en Botones -->
 </body>
